@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2020-10-29T20:39:12" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\variables-and-cy-commands_FINAL.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Verifying variables, cypress commands and jquery commands" timestamp="2020-10-29T20:39:12" tests="1" time="4.1540" failures="0">
+  
+  <testcase name="Verifying variables, cypress commands and jquery commands Navigating to specific product pages" time="4.1540" classname="Navigating to specific product pages"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:38:29" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\04_itaration_by_element.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Iterates over elements" timestamp="2020-10-29T20:38:29" tests="3" time="9.9940" failures="0">
+  
+  <testcase name="Iterates over elements Logs information about all hair care product" time="3.9860" classname="Logs information about all hair care product"></testcase>
+  
+  <testcase name="Iterates over elements ADD specific product to bascet" time="3.6180" classname="ADD specific product to bascet"></testcase>
+  
+  <testcase name="Iterates over elements ADD another specific product to bascet" time="2.3900" classname="ADD another specific product to bascet"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:38:59" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\06_add_multiple_items_to_basket.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Multiple items to basket" timestamp="2020-10-29T20:38:59" tests="1" time="6.2610" failures="0">
+  
+  <testcase name="Multiple items to basket Add items to basket" time="6.2610" classname="Add items to basket"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:38:47" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\05_alias_invoke.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Iterates over elements" timestamp="2020-10-29T20:38:47" tests="1" time="0.0000" failures="1">
+  
+  <testcase name="Iterates over elements Calculate total a count of normal and sale product on main page" time="0.0000" classname="Calculate total a count of normal and sale product on main page">
+    
+    <failure message="expected 636.45 to equal 572.45" type="AssertionError"><![CDATA[AssertionError: expected 636.45 to equal 572.45
+    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\integration\cypress_demo_udemy\automation-test-store\05_alias_invoke.js:152:29)]]></failure>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:38:07" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\02_item_inspect.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Inspect items by using chain of commands " timestamp="2020-10-29T20:38:07" tests="1" time="3.7030" failures="0">
+  
+  <testcase name="Inspect items by using chain of commands  Click on the first item by item text" time="3.7030" classname="Click on the first item by item text"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:37:51" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\01_contact_us.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Test Contact Us form via Automation Test Store" timestamp="2020-10-29T20:37:51" tests="1" time="6.6930" failures="0">
+  
+  <testcase name="Test Contact Us form via Automation Test Store Should be able to open contact us form" time="6.6930" classname="Should be able to open contact us form"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:37:36" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\01_contact_us_Alias_fixtures.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Test Contact Us form via Automation Test Store" timestamp="2020-10-29T20:37:36" tests="1" time="6.6750" failures="0">
+  
+  <testcase name="Test Contact Us form via Automation Test Store Should be able to open contact us form" time="6.6750" classname="Should be able to open contact us form"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2020-10-29T20:38:18" tests="0" file="cypress\integration\cypress_demo_udemy\automation-test-store\03_variable_cy.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Verifing variables, cypress command and jquery commmands" timestamp="2020-10-29T20:38:18" tests="1" time="2.0270" failures="0">
+  
+  <testcase name="Verifing variables, cypress command and jquery commmands Validate properties of contact us page" time="2.0270" classname="Validate properties of contact us page"></testcase>
+  
+</testsuite>
+
+</testsuites>
