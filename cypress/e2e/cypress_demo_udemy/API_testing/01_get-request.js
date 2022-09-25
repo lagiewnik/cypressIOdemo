@@ -18,8 +18,8 @@ describe("Get request", () =>
             let body = JSON.parse(JSON.stringify(response.body));
             cy.log(body);
 
-            expect(body[0]).has.property( "title", "json-server Example");
-            expect(body[5]).has.property( "author", "ziomal z lasu");
+            expect(body[0]).has.property( "title", "Example Json Server");
+            expect(body[0]).has.property( "author", "ziomal z lasu");
 
             body.forEach(element => {
                 expect(element).to.have.all.keys("id", "title", "author");

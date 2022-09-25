@@ -1,5 +1,5 @@
 ///<reference types="cypress" />
-import faker from 'faker/locale/pl'
+import { faker } from '@faker-js/faker';
 
 describe("POST request", () =>
 {

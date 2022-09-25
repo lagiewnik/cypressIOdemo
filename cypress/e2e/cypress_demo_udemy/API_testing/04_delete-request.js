@@ -4,7 +4,7 @@ describe("Delete Request", () => {
     it("Delete a post via /posts api", () => {
       cy.request({
         method: "DELETE",
-        url: "http://localhost:3000/posts/13"
+        url: "http://localhost:3000/posts/1"
       }).then((response) => {
         expect(response.status).to.eql(200);
       });
