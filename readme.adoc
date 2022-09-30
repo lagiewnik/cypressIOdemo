@@ -1,1 +1,4 @@
 kurs udemy: https://www.udemy.com/course/cypress-io-master-class/
+
+add: QA Camp playlist
+https://www.youtube.com/playlist?list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0
