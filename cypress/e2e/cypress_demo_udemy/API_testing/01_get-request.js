@@ -7,6 +7,7 @@ describe("Get request", () =>
         result.its("status").should("equal",200);
     })
 
+
     it("Validate  /posts api correct key and values", ()=> {
         result = cy.request({
             method: "GET",
