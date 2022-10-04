@@ -7,9 +7,9 @@ describe("Create and mark-unmark as favorite", function() {
     const password = "1234";
 
     faker.setLocale("pl")
-    const article_title = faker.lorem.sentence();
-    const article_about = faker.lorem.slug(7);
-    const article_text = faker.lorem.paragraph(3)
+    const article_title = faker.lorem.sentence(2);
+    const article_about = faker.lorem.slug(3);
+    const article_text = faker.lorem.paragraph(2)
 
     it('Sign in', function(){
         cy.visit('https://react-redux.realworld.io/#/login')
@@ -26,23 +26,29 @@ describe("Create and mark-unmark as favorite", function() {
 
 
     it('Create post', ()=>{
-        cy.contains('New Post').click();
+        //cy.contains('New Post').click();
+        cy.get("ul.navbar-nav").children().contains('New Post').click();
         cy.hash().should('include', '#/editor');
         cy.location('hash').should('include', '#/editor');
-        cy.get('[placeholder="Article Title"]').type(article_title);
-        cy.get('[placeholder="What\'s this article about?"]').type(article_about);
-        cy.get('[placeholder="Write your article (in markdown)"]').type(article_text);
-        cy.get('button').contains('Publish Article').click();
+        cy.get('form').within(($form) => {
+            cy.get('input').first().type(article_title);
+            cy.get('input').eq(1).type(article_about);
+
+            cy.get('textarea').last().type(article_text);
+            cy.get('button').contains('Publish Article').click();
+        })
+        
         cy.url().should('include',"article");
     })
 
     it("Mark-unmark as favorite", ()=>{
-        cy.get('a.nav-link').contains(user).click();
+        //cy.get('a.nav-link').contains(user).click();
+        cy.get("ul.navbar-nav").children().contains(user).click();
         cy.contains("My Articles").should('be.visible');
-        cy.get('.ion-heart').click();
+        cy.get('.ion-heart').first().click();
         cy.contains('Favorited Articles').click();
         cy.url().should('include','favorites');
-        cy.get('.ion-heart').click();
+        cy.get('.ion-heart').first().click();
         cy.reload()
         cy.contains("No articles are here... yet.").should('be.visible')
         cy.go('back')
