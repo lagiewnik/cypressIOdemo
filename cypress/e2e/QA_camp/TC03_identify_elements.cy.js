@@ -48,7 +48,9 @@ describe("Create and mark-unmark as favorite", function() {
         cy.get('.ion-heart').first().click();
         cy.contains('Favorited Articles').click();
         cy.url().should('include','favorites');
-        cy.get('.ion-heart').first().click();
+        //cy.wait(3000)
+        cy.contains('Favorited Articles').should('be.visible');
+        cy.get('button').first().click();
         cy.reload()
         cy.contains("No articles are here... yet.").should('be.visible')
         cy.go('back')
