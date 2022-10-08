@@ -36,7 +36,14 @@ describe("Create and mark-unmark as favorite", function() {
     it("Mark-unmark as favorite", ()=>{
         cy.get('a.nav-link').contains(user).click();
         cy.contains("My Articles").should('be.visible');
-        
+        cy.get('.ion-heart').click();
+        cy.contains('Favorited Articles').click();
+        cy.url().should('include','favorites');
+        cy.get('.ion-heart').click();
+        cy.reload()
+        cy.contains("No articles are here... yet.").should('be.visible')
+        cy.go('back')
+
     })
 
 })
