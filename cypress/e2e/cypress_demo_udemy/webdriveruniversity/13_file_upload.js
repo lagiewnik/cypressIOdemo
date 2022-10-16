@@ -20,8 +20,6 @@ describe("File upload handling", () => {
       )
     });
     cy.get("#submit-button").click();
-   
-
   })
 
   it("Upload no file", () => {
